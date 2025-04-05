@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Smart Roads</title>
+
+    <!-- ✅ Load ScrollReveal first -->
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>AI-Powered Smart Roads</h1>
+        <p>Revolutionizing safety & insurance with smart technology</p>
+   <!-- ✅ Load ScrollReveal properly --> </div>
+
+    <div class="feature-card">
+        <h2>Smart Roads</h2>
+        <p>Using AI for intelligent road monitoring.</p>
+    </div>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <script src="../scrollreveal.min.js"></script>
+
+<!-- ✅ Now use ScrollReveal -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log("ScrollReveal:", typeof ScrollReveal); // Just to verify in console
+
+    if (typeof ScrollReveal !== 'undefined') {
+      ScrollReveal().reveal('.hero', { duration: 1000, origin: 'top', distance: '50px' });
+      ScrollReveal().reveal('.feature-card', { duration: 1000, origin: 'bottom', distance: '50px', interval: 200 });
+      ScrollReveal().reveal('.social-icons', { duration: 1000, origin: 'left', distance: '50px' });
+    } else {
+      console.error("ScrollReveal is still undefined. 😞");
+    }
+  });
+</script>
+</body>
+</html>
